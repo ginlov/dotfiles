@@ -1,0 +1,50 @@
+# vim:fileencoding=utf-8
+#########
+# Fonts #
+#########
+include font
+
+##########
+# Cursor #
+##########
+include cursor
+
+##############
+# Scrollback #
+##############
+include scrollback
+
+#########
+# Mouse #
+#########
+include mouse
+
+######################
+# Performance tuning #
+######################
+include performance
+
+#################
+# Window layout #
+#################
+include window
+
+###########
+# Tab bar #
+###########
+include tab
+
+################
+# Color scheme #
+################
+include color
+
+############
+# Advanced #
+############
+include advanced
+
+######################
+# Keyboard shortcuts #
+######################
+include shortcut
