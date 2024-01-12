@@ -8,4 +8,4 @@ local opt = vim.opt
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.foldminlines = 3
-opt.foldnestmax = 2
+opt.foldnestmax = 3

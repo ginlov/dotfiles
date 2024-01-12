@@ -8,13 +8,18 @@ return {
       end,
     },
 
-    ["kyazdani42/nvim-tree.lua"] = {
+    ["nvim-tree/nvim-tree.lua"] = {
       override_options = overrides.nvimtree,
     },
 
     -- ["nvim-telescope/telescope.nvim"] = {
     --   override_options = overrides.telescope,
     -- },
+    ["voldikss/vim-floaterm"] = {
+      config = function()
+        require "custom.plugins.floaterm"
+      end,
+    },
 
     ["nvim-telescope/telescope-fzf-native.nvim"] = {
       module = {"telescope"},
@@ -28,6 +33,12 @@ return {
     ["folke/which-key.nvim"] = {
       disable = false,
     },
+
+    ["ellisonleao/glow.nvim"] = {
+      config = function()
+        require "custom.plugins.glow"
+      end,
+  },
 
     ["jose-elias-alvarez/null-ls.nvim"] = {
       after = "nvim-lspconfig",

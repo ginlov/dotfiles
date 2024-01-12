@@ -18,4 +18,19 @@ M.osc52 = {
   },
 }
 
+M.floaterm = {
+  n = {
+    -- create
+    ["<leader>t"] = { "<cmd> FloatermNew <CR>", "create new terminal" },
+
+    -- toggle
+    ["<C-b>"] = { "<cmd> FloatermToggle <CR>", "toggle terminal" },
+  },
+
+  t = {
+    -- toggle
+    ["<C-b>"] = { "<cmd> FloatermToggle <CR>", "toggle terminal" },
+  }
+}
+
 return M
