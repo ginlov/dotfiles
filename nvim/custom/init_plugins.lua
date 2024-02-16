@@ -1,27 +1,31 @@
 local overrides = require "custom.plugins.overrides"
 
 return {
-    ["neovim/nvim-lspconfig"] = {
+    {
+      "neovim/nvim-lspconfig",
       config = function()
         require "plugins.configs.lspconfig"
         require "custom.plugins.lspconfig"
       end,
     },
 
-    ["nvim-tree/nvim-tree.lua"] = {
+    {
+      "nvim-tree/nvim-tree.lua",
       override_options = overrides.nvimtree,
     },
 
     -- ["nvim-telescope/telescope.nvim"] = {
     --   override_options = overrides.telescope,
     -- },
-    ["voldikss/vim-floaterm"] = {
+    {
+      "voldikss/vim-floaterm",
       config = function()
         require "custom.plugins.floaterm"
       end,
     },
 
-    ["nvim-telescope/telescope-fzf-native.nvim"] = {
+    {
+      "nvim-telescope/telescope-fzf-native.nvim",
       module = {"telescope"},
       run = "make",
       config = function()
@@ -30,24 +34,28 @@ return {
       end,
     },
 
-    ["folke/which-key.nvim"] = {
+    {
+      "folke/which-key.nvim",
       disable = false,
     },
 
-    ["ellisonleao/glow.nvim"] = {
+  {
+      "ellisonleao/glow.nvim",
       config = function()
         require "custom.plugins.glow"
       end,
   },
 
-    ["jose-elias-alvarez/null-ls.nvim"] = {
+    {
+      "jose-elias-alvarez/null-ls.nvim",
       after = "nvim-lspconfig",
       config = function()
         require "custom.plugins.null_ls"
       end,
     },
 
-    ["danymat/neogen"] = {
+    {
+    "danymat/neogen",
     requires = "nvim-treesitter/nvim-treesitter",
     config = function()
       require('neogen').setup {
@@ -63,7 +71,8 @@ return {
     end,
   },
 
-    ["ojroques/nvim-osc52"] = {
+  {
+    "ojroques/nvim-osc52",	    
     config = function()
       require("osc52").setup {
         max_length=0,

@@ -10,7 +10,7 @@ M.ui = {
   transparency = true
 }
 
-M.plugins = require "custom.plugins"
+M.plugins = "custom.init_plugins"
 
 M.mappings = require "custom.mappings"
 
